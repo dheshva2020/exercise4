@@ -1,0 +1,218 @@
+
+:root {
+    font-size: 10px;
+    --color-primary: #4caf50;
+    --color-accent: #ff5722;
+    --color-background: #e3f2fd;
+    --color-text-light: #ffffff;
+    --font-heading: Arial, sans-serif;
+    --font-body: Arial, sans-serif;
+    --spacing-small: 5px;
+    --spacing-medium: 10px;
+    --spacing-large: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    font-size: 10px;
+    color: #000000;
+    margin: 0;
+    line-height: 1.6;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}   
+
+recipe .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}  
+receipe .recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}    
+
+recipe card :hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}   
+recipe card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}   
+hero section {
+    background-color: #e0f7fa;
+    color : #00796b;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}   
+hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}   
+hero p {
+    font-size: 1.2rem;
+}   
+
+nav .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #00796b;
+}   
+nav .nav-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}   
+nav .nav-list li a:hover {
+    text-decoration: underline;
+}   
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration : underline;
+}
+
+search bar {
+    margin: 20px 0;
+    text-align: center;
+}
+search input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+search button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b;
+    color: #ffffff;
+    cursor: pointer;
+}
+search button:hover {
+    background-color: #004d40;
+}   
+@media (max-width: 600px) {
+    .recipe .recipe-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .search input {
+        width: 80%;
+    }
+}
+@media (max-width: 400px) {
+    .nav .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}   
+recipe details {
+    max-width: fit-content;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 20px;
+}   
+recipe details img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}   
+recipe details h2 {
+    margin-bottom: 10px;
+}   
+recipe details p {
+    margin-bottom: 5px;
+}   
+ingredients, steps {
+    margin-top: 15px;
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+}
+ingredients ul, steps ol {
+    margin-left: 20px;
+
+}
+transition {
+    transition: all 0.3s ease;
+}   
+hover {
+    transform: scale(1.05);
+}   
+active {
+    transform: scale(0.95);
+}
+button {
+    cursor: pointer;
+}
+button:focus {
+    outline: 2px solid #00796b;
+    outline-offset: 2px;
+}
+a {
+    text-decoration: none;
+}
+a:focus {
+    outline: 2px solid #00796b;
+    outline-offset: 2px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+container fluid {
+    width: 100%;
+    padding: 0 15px;
+}
+container sm {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+container md {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+container lg {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+container xl {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}       
